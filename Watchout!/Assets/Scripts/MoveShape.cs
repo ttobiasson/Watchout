@@ -32,7 +32,8 @@ public class MoveShape : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, GetNewPosition(), (float)speed1D * Time.deltaTime);
 
-        speed1D *= 1.0005;
+        speed1D *= 1.002;
+
     }
 
     Vector2 GetNewPosition(){
@@ -45,30 +46,30 @@ public class MoveShape : MonoBehaviour
 
         if(transform.position.y > yMax && gotOutYmax){
             speed.y = -speed.y;
-            gotOutYmax = false;
+            gotOutYmax = false; //(1,2,3,4,5,6,7) Without these checks, at higher speeds, the shapes might get stuck outside the playing area.
         }else if(!(transform.position.y > yMax))
-            gotOutYmax = true;
+            gotOutYmax = true; //1
 
         if(transform.position.y < yMin && gotOutYmin){
             speed.y = -speed.y;
-            gotOutYmin = false;
+            gotOutYmin = false; //2
         }else if(!(transform.position.y < yMin))
-            gotOutYmin = true;
+            gotOutYmin = true; //3
       
     }
     void CheckX(){
 
         if(transform.position.x > xMax && gotOutXmax){
             speed.x = -speed.x;
-            gotOutXmax = false;
+            gotOutXmax = false; //4
         }else if(!(transform.position.x > xMax))
-            gotOutXmax = true;
+            gotOutXmax = true; //5
 
         if(transform.position.x < xMin && gotOutXmin){
             speed.x = -speed.x;
-            gotOutXmin = false;
+            gotOutXmin = false; //6
         }else if(!(transform.position.x < xMin))
-            gotOutXmin = true;
+            gotOutXmin = true; //7
 
     }
 }

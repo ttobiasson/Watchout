@@ -311,8 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417bb4afbc67670c08d8c1284488bce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 1705306439}
-  restartPanel: {fileID: 164568820}
 --- !u!114 &164568826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +514,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 164568825}
-        m_MethodName: GoToGameScene
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -611,6 +609,8 @@ GameObject:
   - component: {fileID: 1705306438}
   - component: {fileID: 1705306440}
   - component: {fileID: 1705306439}
+  - component: {fileID: 1705306441}
+  - component: {fileID: 1705306442}
   m_Layer: 5
   m_Name: ScoreValue
   m_TagString: Untagged
@@ -678,6 +678,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705306437}
   m_CullTransparentMesh: 0
+--- !u!114 &1705306441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705306437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417bb4afbc67670c08d8c1284488bce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1705306442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705306437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2083dc676ec76944a58ceecb914e5b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1705306439}
+  recentScore: 0
 --- !u!1 &1970956934
 GameObject:
   m_ObjectHideFlags: 0

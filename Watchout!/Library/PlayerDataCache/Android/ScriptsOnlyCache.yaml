@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - GameMaster
     - MoveDots
     - MoveShape
+    - Score
     - dragPlayer
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Game.unity:
     - Class: 1
@@ -47,9 +49,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 12402}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -86,13 +88,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11846}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12598}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12950}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12992}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -116,7 +118,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -125,20 +131,26 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11160}
     - Class: 114
+      Script: {instanceID: 11316}
+    - Class: 114
       Script: {instanceID: 11356}
     - Class: 114
       Script: {instanceID: 11692}
     - Class: 114
       Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 12598}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12950}
+    - Class: 114
+      Script: {instanceID: 12992}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -311,7 +323,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: aca81b1be7cb3d6ccdf4201d2158e234
+      Hash: 6f737f2539c53f1db27654c24235e6a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveShape
@@ -363,6 +375,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb2b962a48d2f6039fa9915b7639cc3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -602,4 +620,4 @@ ScriptsOnlyBuild:
   - Assets/MainMenu.unity
   - Assets/Game.unity
   - Assets/ScoreScreen.unity
-  playerPath: /home/botvinnik/Documents/Watchout.aab
+  playerPath: /home/tom/Watchout-Build/watchout.aab

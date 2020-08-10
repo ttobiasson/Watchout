@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class dragPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
     bool moveAllowed;
     Collider2D col;
     public static bool hasLost = false;
-
     void Start()
     {
         col = GetComponent<Collider2D>();
@@ -38,6 +38,7 @@ public class dragPlayer : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.tag == "Shape"){
+            
             SceneManager.LoadScene("ScoreScreen");
             hasLost = true;
         }
