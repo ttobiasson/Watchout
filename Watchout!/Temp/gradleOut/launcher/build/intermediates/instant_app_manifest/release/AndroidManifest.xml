@@ -5,7 +5,7 @@
     android:installLocation="preferExternal"
     android:targetSandboxVersion="2"
     android:versionCode="1"
-    android:versionName="0.1" >
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -67,7 +67,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="2ed28af1-359b-423b-873d-346939241f7c" />
+            android:value="0026946b-30ca-4ad6-ada0-a27189de4f20" />
     </application>
 
 </manifest>

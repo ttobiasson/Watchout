@@ -14,9 +14,13 @@ public class GameMaster : MonoBehaviour
     
     public void StartGame(){
         SceneManager.LoadScene("Game");
+        Values.ResetScore();
+
     }
     public void RestartGame(){
         SceneManager.LoadScene("Game");
+        Values.ResetScore();
+
     }
 
 

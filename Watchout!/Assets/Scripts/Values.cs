@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public static class Values
 {
-    public static int recentScore = 0;
+    public static int recentScore;
 
     public static string GetScore(){
         return recentScore.ToString();

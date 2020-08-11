@@ -10,7 +10,6 @@ public class Score : MonoBehaviour
     void Update(){
         if(dragPlayer.hasLost){
             score.text = Values.GetScore();
-            Values.ResetScore();
             dragPlayer.hasLost = false;
         }
         
